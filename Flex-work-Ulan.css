@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    border: 1px solid;
+} 
+
+
+.container > div {
+    font-size: 80px;
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: 3px;
+    background: rgb(39, 101, 182);
+    border: 5px solid black;
+}
+
+.container > div:nth-child(odd) {
+    width: 10%;
+}
+
+.container > div:nth-child(even) {
+    width: 20%;
+}
+
+.container > div:nth-child(2),.container > div:nth-child(4), .container > div:nth-child(9) {
+    width: 60%;
+}
+
+
+
+
+
